@@ -10,13 +10,13 @@
 
 ---
 
-## 📸 Showcase & Preview Screenshots
+## 📸 Real Application Screenshots
 
 ### 1. 🔮 3D WebGL Quantum Cyber Core & Hero Section
-![CYRANEXUS 3D WebGL Hero Preview](./public/preview_hero.png)
+![CYRANEXUS 3D WebGL Hero Screenshot](./public/hero_screenshot.png)
 
-### 2. 🦾 Bio-Cybernetic Telemetry HUD & Digital Badge Pass
-![CYRANEXUS Telemetry HUD & Pass Preview](./public/preview_hud.png)
+### 2. 🦾 Bio-Cybernetic Telemetry HUD Blueprint
+![CYRANEXUS Telemetry HUD Screenshot](./public/hud_screenshot.png)
 
 ---
 
