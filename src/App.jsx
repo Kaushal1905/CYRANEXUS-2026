@@ -1,5 +1,6 @@
 import React, { useState } from 'react';
 import { ThreeCyborgScene } from './components/ThreeCyborgScene';
+import { ParallaxLayers } from './components/ParallaxLayers';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AugmentationVisualizer } from './components/AugmentationVisualizer';
@@ -16,13 +17,16 @@ export function App() {
   const [isSubmissionOpen, setIsSubmissionOpen] = useState(false);
 
   return (
-    <div className="relative min-h-screen bg-[#05070f] text-slate-100 selection:bg-[#00f3ff] selection:text-black">
+    <div className="relative min-h-screen bg-[#05070f] text-slate-100 selection:bg-[#00f3ff] selection:text-black overflow-x-hidden">
       
       {/* Scanline CRT overlay */}
       <div className="scanline-overlay" />
       
       {/* Interactive 3D WebGL Three.js Cyber Core & Scroll Animations */}
       <ThreeCyborgScene />
+
+      {/* Task 3 Multi-Layered Parallax Scrolling Layers (Far BG, Midground Orbs, Fast FG Particles) */}
+      <ParallaxLayers />
 
       {/* Main Navigation Bar */}
       <Navbar 

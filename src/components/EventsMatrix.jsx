@@ -1,6 +1,7 @@
 import React, { useState } from 'react';
 import { Trophy, Users, Search, ArrowUpRight, X, Shield, Sparkles, CheckCircle2 } from 'lucide-react';
 import { TECHFEST_DATA } from '../data/techfestData';
+import { ParallaxCard } from './ParallaxCard';
 import { sound } from '../utils/audioEngine';
 
 export const EventsMatrix = () => {
@@ -80,83 +81,84 @@ export const EventsMatrix = () => {
           </div>
         </div>
 
-        {/* Events Grid */}
+        {/* Events Grid with 3D Mouse Parallax Tilt Cards */}
         <div className="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-3 gap-6">
           {filteredEvents.map((event) => {
             const isReg = registeredEvents[event.id];
             return (
-              <div
-                key={event.id}
-                onMouseEnter={() => sound.playHover()}
-                className="group rounded-xl cyber-glass border border-slate-800 hover:border-[#ff0055]/60 transition-all flex flex-col overflow-hidden"
-              >
-                {/* Event Image Banner */}
-                <div className="relative h-44 overflow-hidden">
-                  <img 
-                    src={event.image} 
-                    alt={event.title}
-                    className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
-                  />
-                  <div className="absolute inset-0 bg-gradient-to-t from-[#090c19] via-transparent to-transparent" />
-                  
-                  {/* Badge */}
-                  <span className="absolute top-3 right-3 font-mono text-[10px] font-bold px-2 py-1 rounded bg-[#ff0055]/90 text-white uppercase tracking-wider shadow-lg">
-                    {event.badge}
-                  </span>
-                </div>
-
-                {/* Event Body */}
-                <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
-                  <div>
-                    <h3 className="font-orbitron font-bold text-lg text-white group-hover:text-[#ff0055] transition-colors">
-                      {event.title}
-                    </h3>
-                    <p className="font-rajdhani text-slate-300 text-sm mt-2 leading-relaxed line-clamp-2">
-                      {event.summary}
-                    </p>
+              <ParallaxCard key={event.id}>
+                <div
+                  onMouseEnter={() => sound.playHover()}
+                  className="group rounded-xl cyber-glass border border-slate-800 hover:border-[#ff0055]/60 transition-all flex flex-col overflow-hidden h-full"
+                >
+                  {/* Event Image Banner */}
+                  <div className="relative h-44 overflow-hidden">
+                    <img 
+                      src={event.image} 
+                      alt={event.title}
+                      className="w-full h-full object-cover group-hover:scale-105 transition-transform duration-500"
+                    />
+                    <div className="absolute inset-0 bg-gradient-to-t from-[#090c19] via-transparent to-transparent" />
+                    
+                    {/* Badge */}
+                    <span className="absolute top-3 right-3 font-mono text-[10px] font-bold px-2 py-1 rounded bg-[#ff0055]/90 text-white uppercase tracking-wider shadow-lg">
+                      {event.badge}
+                    </span>
                   </div>
 
-                  {/* Prize & Team Info */}
-                  <div className="pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
-                    <div className="flex items-center gap-1.5 text-[#fcee0a] font-bold">
-                      <Trophy className="w-4 h-4" />
-                      <span>{event.prize}</span>
+                  {/* Event Body */}
+                  <div className="p-5 flex-1 flex flex-col justify-between space-y-4">
+                    <div>
+                      <h3 className="font-orbitron font-bold text-lg text-white group-hover:text-[#ff0055] transition-colors">
+                        {event.title}
+                      </h3>
+                      <p className="font-rajdhani text-slate-300 text-sm mt-2 leading-relaxed line-clamp-2">
+                        {event.summary}
+                      </p>
                     </div>
-                    <div className="flex items-center gap-1 text-slate-400">
-                      <Users className="w-3.5 h-3.5" />
-                      <span>{event.teamSize}</span>
+
+                    {/* Prize & Team Info */}
+                    <div className="pt-3 border-t border-slate-800 flex items-center justify-between text-xs font-mono">
+                      <div className="flex items-center gap-1.5 text-[#fcee0a] font-bold">
+                        <Trophy className="w-4 h-4" />
+                        <span>{event.prize}</span>
+                      </div>
+                      <div className="flex items-center gap-1 text-slate-400">
+                        <Users className="w-3.5 h-3.5" />
+                        <span>{event.teamSize}</span>
+                      </div>
+                    </div>
+
+                    {/* Action Buttons */}
+                    <div className="flex gap-2 pt-1">
+                      <button
+                        onClick={() => handleOpenModal(event)}
+                        className="flex-1 py-2 rounded bg-slate-900 border border-slate-700 text-slate-200 text-xs font-orbitron font-bold hover:border-[#ff0055] hover:text-[#ff0055] transition-all"
+                      >
+                        View Specs
+                      </button>
+
+                      <button
+                        onClick={() => handleRegister(event.id)}
+                        className={`px-4 py-2 rounded text-xs font-orbitron font-bold transition-all flex items-center gap-1.5 ${
+                          isReg
+                            ? 'bg-[#00ff66]/20 text-[#00ff66] border border-[#00ff66]/40'
+                            : 'bg-[#ff0055] text-white hover:bg-[#ff2277]'
+                        }`}
+                      >
+                        {isReg ? (
+                          <>
+                            <CheckCircle2 className="w-3.5 h-3.5" />
+                            Registered
+                          </>
+                        ) : (
+                          'Register'
+                        )}
+                      </button>
                     </div>
                   </div>
-
-                  {/* Action Buttons */}
-                  <div className="flex gap-2 pt-1">
-                    <button
-                      onClick={() => handleOpenModal(event)}
-                      className="flex-1 py-2 rounded bg-slate-900 border border-slate-700 text-slate-200 text-xs font-orbitron font-bold hover:border-[#ff0055] hover:text-[#ff0055] transition-all"
-                    >
-                      View Specs
-                    </button>
-
-                    <button
-                      onClick={() => handleRegister(event.id)}
-                      className={`px-4 py-2 rounded text-xs font-orbitron font-bold transition-all flex items-center gap-1.5 ${
-                        isReg
-                          ? 'bg-[#00ff66]/20 text-[#00ff66] border border-[#00ff66]/40'
-                          : 'bg-[#ff0055] text-white hover:bg-[#ff2277]'
-                      }`}
-                    >
-                      {isReg ? (
-                        <>
-                          <CheckCircle2 className="w-3.5 h-3.5" />
-                          Registered
-                        </>
-                      ) : (
-                        'Register'
-                      )}
-                    </button>
-                  </div>
                 </div>
-              </div>
+              </ParallaxCard>
             );
           })}
         </div>
