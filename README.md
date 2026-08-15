@@ -1,121 +1,111 @@
-# 🦾 IIT Bombay Techfest 2026 - CYBORG: Nexus of Human & Machine
+# 🦾 CYRANEXUS 2026 — IIT Bombay Techfest
 
-> Official Cyborg-Themed Responsive Landing Page and Interactive Application for **IIT Bombay Techfest** (Asia's Largest Science & Technology Festival).
+> **Master 3D Interactive WebGL & Parallax Platform** for **IIT Bombay Techfest** (Asia's Largest Science & Technology Festival).
 
-![Cyborg Landing Page Banner](https://images.unsplash.com/photo-1485827404703-89b55fcc595e?auto=format&fit=crop&w=1200&q=80)
-
----
-
-## 🌟 Key Features
-
-### 1. 🌌 Interactive Canvas Cyber Neural Mesh
-- Custom **HTML5 2D Canvas** rendering glowing particle nodes, dynamic inter-connecting web lines, and cursor gravitational pull effects.
-- High-performance, 60 FPS background animation.
-
-### 2. 🦾 Bio-Cybernetic Telemetry & Augmentation HUD
-- Interactive **Silhouette Blueprint HUD** with hotspot targets for:
-  - **Cortex-9 Neural Interface** (Brain-Computer Interface)
-  - **Ocular HUD Sensor** (Optic Telemetry & Spectrum Vision)
-  - **Micro-Fusion Heart Core** (Deuterium Reactor Cell)
-  - **Titanium Exo-Spine** (Structural Flex-Alloy Frame)
-  - **Hyper-Servo Hydraulic Arms** (Hydraulic Actuators)
-- Live metrics display: Latency, Bandwidth, Tensile Strength, Power Output, and active module diagnostics simulator.
-
-### 3. ⚔️ Flagship Competition & Event Matrix
-- Search & sector filtering across:
-  - **RoboWars: Cybernetic Carnage** (₹15,00,000 Prize)
-  - **Neural Mesh AI Hackathon** (₹10,00,000 Prize)
-  - **Bionic Prosthetics Innovation Challenge** (₹8,00,000 Prize)
-  - **Quantum Defense CTF** (₹7,50,000 Prize)
-  - **Techno-Drone FPV Grand Prix** (₹6,00,000 Prize)
-- Interactive event modal specifications and instant registration toggles.
-
-### 4. 🎛️ Zero-Dependency Web Audio API Sound Engine
-- Custom-synthesized sci-fi audio effects for UI clicks, hover blips, telemetry sweeps, and event success chimes built directly with the **Web Audio API**.
-- Mute/Unmute audio controls integrated into the top navigation.
-
-### 5. 🤖 CYRA-9 Holographic AI Terminal
-- Sci-fi interactive console answering quick queries (`/events`, `/schedule`, `/prizes`, `/augmentations`, `/venue`, `/help`).
-
-### 6. 🎟️ Custom Cyborg Digital Pass & Badge Generator
-- Real-time pass generator where participants can enter their Name, Designation, Institution, and Access Tier.
-- Renders an official **IIT Bombay Techfest Cyborg Pass** complete with a custom HTML5 QR code, holographic foil styling, unique pass hash, and print/download button.
-
-### 7. 📤 Submission & GitHub Link Modal
-- Integrated helper displaying repository links, local git setup verification, and Google Drive video submission guidelines with viewer access checks.
+[![Vite](https://img.shields.io/badge/Vite-5.4-646CFF?style=for-the-badge&logo=vite&logoColor=white)](https://vitejs.dev/)
+[![React](https://img.shields.io/badge/React-18.2-61DAFB?style=for-the-badge&logo=react&logoColor=black)](https://react.dev/)
+[![Three.js](https://img.shields.io/badge/Three.js-WebGL-000000?style=for-the-badge&logo=three.js&logoColor=white)](https://threejs.org/)
+[![Web Audio API](https://img.shields.io/badge/Web_Audio_API-Synthesizer-00F3FF?style=for-the-badge)](https://developer.mozilla.org/en-US/docs/Web/API/Web_Audio_API)
+[![IIT Bombay](https://img.shields.io/badge/IIT_Bombay-Techfest_2026-FF0055?style=for-the-badge)](https://techfest.org/)
 
 ---
 
-## 🚀 Quick Start & Installation
+## 📸 Showcase & Preview Screenshots
+
+### 1. 🔮 3D WebGL Quantum Cyber Core & Hero Section
+![CYRANEXUS 3D WebGL Hero Preview](./public/preview_hero.png)
+
+### 2. 🦾 Bio-Cybernetic Telemetry HUD & Digital Badge Pass
+![CYRANEXUS Telemetry HUD & Pass Preview](./public/preview_hud.png)
+
+---
+
+## 🏆 Master Submission Feature Breakdown
+
+CYRANEXUS 2026 is engineered as a unified, production-grade application fulfilling **Task 1, Task 2, and Task 3** in a single master WebGL experience.
+
+```
+CYRANEXUS 2026
+├── Task 1: Responsive Cyborg Landing Page & Creative UI/UX
+├── Task 2: 3D Interactive WebGL Objects & 3D Scroll Animations
+└── Task 3: Multi-Layered Parallax Scrolling & 3D Mouse Tilt Cards
+```
+
+---
+
+### 📌 Task 1: Responsive Cyborg Landing Page & Creative UI/UX
+- **Cyberpunk Dark Aesthetic**: Custom neon cyan (`#00f3ff`) and electric magenta (`#ff0055`) glassmorphism, CRT scanline overlays, and Google Fonts (`Orbitron`, `Rajdhani`, `Share Tech Mono`).
+- **Bio-Cybernetic Telemetry HUD**: Interactive chassis outline with hotspot target nodes (*Cortex-9 Neural Interface*, *Ocular HUD*, *Micro-Fusion Core*, *Exo-Spine*, *Hydraulic Arms*) displaying live metrics and a system diagnostic scanner.
+- **Flagship Competition Matrix**: Search & sector filtering for flagship challenges (*RoboWars*, *Neural Mesh AI Hackathon*, *Bionic Prosthetics*, *Quantum CTF*) with prize pool counters (₹5,00,00,000+ total).
+- **Web Audio API Audio Synth**: Zero-dependency real-time audio synthesizer producing sci-fi UI clicks, sweeps, and success chimes with navigation mute/unmute control.
+- **CYRA-9 Holographic AI Terminal**: Sci-fi chatbot console answering festival commands (`/events`, `/schedule`, `/prizes`, `/venue`).
+- **Custom Cyborg Pass Generator**: Real-time ticket creator generating personalized digital badges with HTML5 Canvas QR codes, unique hash codes, and print/download feature.
+
+---
+
+### 📌 Task 2: 3D Interactive WebGL & 3D Scroll Animations
+- **Interactive 3D Three.js WebGL Core**:
+  - Outer 3D glowing wireframe Icosahedron shell (`#00f3ff`).
+  - Inner 3D rotating metallic Torus-Knot energy reactor (`#ff0055`).
+  - Orbiting 3D gold telemetry ring.
+  - 600 glowing 3D star particles distributed in spatial WebGL environment.
+- **Interactive 3D Mouse Controls**: Drag anywhere on screen to rotate the 3D model 360° with cursor-follow spring physics.
+- **3D Scroll-Driven Animations**: Camera perspective & 3D object geometries smoothly morph, scale, and transform between sections as you scroll (*Hero -> Telemetry HUD -> Competition Matrix -> Cyber Warp Terminal*).
+
+---
+
+### 📌 Task 3: Multi-Layered Parallax Scrolling & 3D Card Tilt
+- **Multi-Speed Depth Parallax Layers**:
+  - **Layer 0 (Far BG Grid)**: Moves slowly at **0.15x** scroll speed.
+  - **Layer 1 (Midground Cyber Orbs & Rings)**: Drifts in counter-direction at **-0.35x** scroll speed with rotation.
+  - **Layer 2 (Foreground UI Content)**: Moves at standard 1.0x scroll speed.
+  - **Layer 3 (Foreground Particle Dust)**: Floats past at **1.4x** fast scroll velocity for extreme depth.
+- **3D Mouse Parallax Tilt Cards**: HUD telemetry cards and competition cards dynamically tilt in 3D space (`perspective(1000px) rotateX(...) rotateY(...)`) following cursor movement.
+- **Live Parallax Depth Gauge**: Floating bottom-left telemetry indicator showing live scroll depth (`px`) and active layer speed multipliers (`0.15x / -0.35x / 1.40x`).
+
+---
+
+## 🚀 Quick Start & Running Locally
 
 ### Prerequisites
 - **Node.js**: v18.0.0 or higher
 - **NPM**: v9.0.0 or higher
 
-### Steps to Run Locally
+### Steps to Run
 
 ```bash
-# 1. Clone or navigate to the repository
-cd "d:/IIT Bombay Techfest"
+# 1. Clone the repository
+git clone https://github.com/Kaushal1905/CYRANEXUS-2026.git
 
-# 2. Install dependencies
+# 2. Navigate to project folder
+cd CYRANEXUS-2026
+
+# 3. Install dependencies
 npm install
 
-# 3. Start local development server
+# 4. Start local development server
 npm run dev
 
-# 4. Open in browser
-# Local URL: http://localhost:3000
+# 5. Open browser
+# URL: http://localhost:3000
 ```
 
 ### Production Build
 
 ```bash
-# Build for production distribution
+# Compile production WebGL bundle
 npm run build
 
-# Preview production build locally
+# Preview build locally
 npm run preview
 ```
 
 ---
 
-## 📂 Project Architecture
+## 📤 Submission & Drive Link Info
 
-```
-IIT Bombay Techfest/
-├── index.html                  # Main HTML entry with Google Fonts & SEO tags
-├── package.json                # Project manifest & dependencies
-├── vite.config.js              # Vite bundler configuration
-├── README.md                   # Complete repository documentation
-└── src/
-    ├── main.jsx                # React root renderer
-    ├── App.jsx                 # Main application layout assembly
-    ├── index.css               # Design system, scanlines, glow keyframes, cyber glass
-    ├── data/
-    │   └── techfestData.js     # Festival data, augmentations, competitions, schedule
-    ├── utils/
-    │   └── audioEngine.js      # Web Audio API sci-fi synthesizer engine
-    └── components/
-        ├── Navbar.jsx          # Glassmorphic navbar with sound toggle & CTAs
-        ├── HeroSection.jsx     # Glitch title, countdown clock, stats counter
-        ├── CanvasCyborgCore.jsx# Interactive HTML5 Canvas background
-        ├── AugmentationVisualizer.jsx # Telemetry blueprint with node targets
-        ├── EventsMatrix.jsx    # Filterable competitions grid & detail modals
-        ├── KeynoteSpeakers.jsx # International speakers & robot exhibits
-        ├── ScheduleTimeline.jsx# Day 1 / 2 / 3 interactive timeline
-        ├── TerminalAssistant.jsx# CYRA-9 interactive CLI chatbot
-        ├── PassGenerator.jsx   # Custom Cyborg badge & canvas QR code creator
-        ├── SubmissionHelper.jsx# GitHub & Google Drive submission links drawer
-        └── Footer.jsx          # IIT Bombay campus venue & credits
-```
-
----
-
-## 📹 Video Demo & GitHub Submission Info
-
-- **GitHub Repository Link**: [Submit GitHub Link Here]
-- **Google Drive Demo Recording Link**: [Submit Google Drive Link Here] *(Viewer Access Enabled)*
+- **GitHub Repository**: [github.com/Kaushal1905/CYRANEXUS-2026](https://github.com/Kaushal1905/CYRANEXUS-2026)
+- **Google Drive Demo Folder**: [Google Drive Link](https://drive.google.com/drive/folders/1NpS6Ik8Zb5H2XrW_o-Wqng85H6Wec7Yg?usp=sharing) *(Viewer Access Enabled)*
 
 ---
 
