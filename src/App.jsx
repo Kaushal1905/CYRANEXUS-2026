@@ -1,5 +1,5 @@
 import React, { useState } from 'react';
-import { CanvasCyborgCore } from './components/CanvasCyborgCore';
+import { ThreeCyborgScene } from './components/ThreeCyborgScene';
 import { Navbar } from './components/Navbar';
 import { HeroSection } from './components/HeroSection';
 import { AugmentationVisualizer } from './components/AugmentationVisualizer';
@@ -21,8 +21,8 @@ export function App() {
       {/* Scanline CRT overlay */}
       <div className="scanline-overlay" />
       
-      {/* Interactive HTML5 Canvas Cyber Mesh */}
-      <CanvasCyborgCore />
+      {/* Interactive 3D WebGL Three.js Cyber Core & Scroll Animations */}
+      <ThreeCyborgScene />
 
       {/* Main Navigation Bar */}
       <Navbar 
@@ -31,7 +31,7 @@ export function App() {
       />
 
       {/* Main Content Sections */}
-      <main className="relative z-10 space-y-12">
+      <main className="relative z-10 space-y-12 pointer-events-auto">
         <HeroSection 
           onOpenPass={() => setIsPassOpen(true)} 
         />
