@@ -1,0 +1,54 @@
+========================================================================
+IIT BOMBAY TECHFEST 2026 - SUBMISSION INFORMATION & TASK BREAKDOWN
+========================================================================
+
+Project Name: CYRANEXUS 2026
+GitHub Repository: https://github.com/Kaushal1905/CYRANEXUS-2026.git
+Google Drive Submission Folder: https://drive.google.com/drive/folders/1NpS6Ik8Zb5H2XrW_o-Wqng85H6Wec7Yg?usp=sharing
+
+------------------------------------------------------------------------
+MASTER APPLICATION OVERVIEW
+------------------------------------------------------------------------
+CYRANEXUS 2026 is a single, cohesive, high-performance 3D Interactive 
+WebGL & Parallax Platform engineered to fulfill Task 1, Task 2, AND 
+Task 3 in a unified web experience.
+
+------------------------------------------------------------------------
+TASK-BY-TASK FEATURE BREAKDOWN
+------------------------------------------------------------------------
+
+📌 TASK 1: Responsive Cyborg Landing Page & Creative UI/UX
+   - Theme: "CYBORG: The Nexus of Human & Machine" for IIT Bombay Techfest.
+   - Interactive Telemetry HUD with clickable chassis nodes (Neural Link, Ocular HUD, Fusion Core, Exo-Spine, Bionic Limb).
+   - Flagship Competition Matrix (RoboWars, AI Hackathon, Bio-Tech, Quantum CTF) with prize pool counters (₹5,00,00,000+).
+   - Zero-dependency Web Audio API Sci-Fi Audio Synthesizer (UI clicks, sweeps, success chimes).
+   - CYRA-9 Holographic AI Terminal chatbot (/events, /schedule, /prizes, /venue).
+   - Custom Cyborg Pass & Digital Badge Creator with HTML5 Canvas QR Code.
+
+📌 TASK 2: 3D Interactive WebGL & 3D Scroll Animations
+   - Built with Three.js (WebGL).
+   - Interactive 3D Quantum Cyber Core: Outer glowing wireframe Icosahedron, inner metallic Torus-Knot energy reactor, and 600 glowing 3D star particles.
+   - 3D Mouse Drag Controls: Users can click and drag to rotate the 3D model 360° in real-time.
+   - 3D Scroll-Driven Animations: 3D camera smoothly morphs, scales, and rotates the 3D model across landing page sections (Hero -> Telemetry HUD -> Competition Matrix -> Cyber Warp Terminal).
+
+📌 TASK 3: Multi-Layered Parallax Scrolling & 3D Tilt Cards
+   - Multi-Speed Parallax Layers:
+     * Layer 0 (Far BG Grid): Moves slowly at 0.15x scroll velocity.
+     * Layer 1 (Midground Cyber Orbs & Holograms): Drifts in counter-direction at -0.35x scroll speed with rotation.
+     * Layer 2 (Foreground Content UI): Moves at 1.0x standard speed.
+     * Layer 3 (Foreground Particle Dust): Floats past at 1.4x fast scroll velocity for extreme depth.
+   - 3D Mouse Parallax Tilt Cards: HUD & event cards dynamically tilt in 3D space (perspective + rotateX/rotateY) following cursor movement.
+   - Live Parallax Telemetry Gauge in bottom-left corner displaying live scroll depth (px) and layer velocity multipliers.
+
+------------------------------------------------------------------------
+LOCAL SETUP & RUNNING
+------------------------------------------------------------------------
+1. git clone https://github.com/Kaushal1905/CYRANEXUS-2026.git
+2. cd CYRANEXUS-2026
+3. npm install
+4. npm run dev
+5. Open http://localhost:3000
+
+========================================================================
+Thank you for evaluating CYRANEXUS 2026 for IIT Bombay Techfest!
+========================================================================
